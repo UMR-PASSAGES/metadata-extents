@@ -3,10 +3,10 @@
 ##Synopsis
 
 This is a python script that creates an ASC raster layer counting superpositions of rectangular extents defined by four coordinates.
-<img src="superposition.png" alt="Superposition of rectangles" style="width: 400px;"/>
+<img src="superposition.png" alt="Superposition of rectangles" style="width: 200px;"/>
 
 The resulting ASC layer can be viewed in GIS software to produce this kind of maps :
-<img src="map_example.png" alt="Map example" style="width: 400px;"/>
+<img src="map_example.png" alt="Map example" style="width: 200px;"/>
 
 ##Motivation
 
