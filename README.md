@@ -4,6 +4,7 @@
 
 This is a python script that creates an ASC raster layer counting superpositions of rectangular extents defined by four coordinates.
 ![Superposition of rectangles](superposition.svg)
+
 The resulting ASC layer can be viewed in GIS software to produce this kind of maps :
 ![Map example](map_example.png)
 
