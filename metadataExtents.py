@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python2.7
 # -*- coding: utf-8 -*-
 
 #####################################################
@@ -74,7 +74,7 @@ def arrayToRaster(myRaster, myArray):
     input.write('cellsize ' + str(res) + '\n')
     input.write('nodata_value -9999\n')
     # values
-    for row  in range(myArray.shape[0]):
+    for row in range(myArray.shape[0]):
         for value in myArray[row]:
             input.write(str(value) + ' ')
     input.close()
@@ -97,8 +97,8 @@ log.write('resolution : ' + str(res) + '\n')
 print ('calculating...')
 
 # get number of rows and columns based on resolution
-nbrow = 180/res + 1
-nbcol = 360/res + 1
+nbrow = int(180/res + 1)
+nbcol = int(360/res + 1)
 
 # creates corresponding array of zeros, type integer
 a = np.zeros((nbrow,nbcol), dtype='i')
@@ -123,10 +123,10 @@ for index, row in df.iterrows():
     maxy = roundcoord(maxy)
 
     # get rows and columns numbers from coordinates
-    mincol = getcol(minx)
-    maxcol = getcol(maxx)
-    minrow = getrow(maxy)
-    maxrow = getrow(miny)
+    mincol = int(getcol(minx))
+    maxcol = int(getcol(maxx))
+    minrow = int(getrow(maxy))
+    maxrow = int(getrow(miny))
     
     # add corresponding values to array (+1)
     a[minrow+1:maxrow+1,mincol:maxcol] = a[minrow+1:maxrow+1,mincol:maxcol] + 1
