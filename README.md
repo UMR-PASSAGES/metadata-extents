@@ -1,6 +1,6 @@
 # metadata-extents
 
-##Synopsis
+## Synopsis
 
 This is a python script that creates an ASC raster layer counting superpositions of rectangular extents defined by four coordinates. The input is a CSV with 4 columns for east, west, north and south coordinates of each extent.
 
@@ -10,18 +10,18 @@ The resulting ASC layer can be viewed in GIS software to produce this kind of ma
 
 <img src="images/map_example.png" alt="Map example" width="400"/>
 
-You can then use asc_calculator to calculate differences between two asc files, to create an evolution map between 2 dates for example.
+You can then use asc_calculator to calculate differences between two asc files, to create an evolution map between 2 dates for example. This script was written by Sébastien Serre (https://github.com/ssbx).
 
-##Motivation
+## Motivation
 
 This script is used to analyze Spatial Data Infrastructures for the GEOBS research project : https://www-iuem.univ-brest.fr/pops/projects/geobs.
 
-##Dependencies
+## Dependencies
 
 - numpy : package for scientific computing with Python, http://www.numpy.org/
 - pandas : Python data analysis library, http://pandas.pydata.org/
 
-##How to run
+## How to run
 
 This script uses a CSV file as an input, with each line corresponding to one rectangular extent, and 4 columns for the 4 coordinates of each extent (west, east, north, south). These 4 columns can be in any order and labeled as you wish.
 Open metadata_extents.py with a text editor and set the variables at the beginning of the script : 
@@ -35,7 +35,7 @@ Open metadata_extents.py with a text editor and set the variables at the beginni
 
 Once you've set these variables, run the script (http://pythoncentral.io/execute-python-script-file-shell/).
 
-##License
+## License
 
 This project is published under the General Public License v3.
 
