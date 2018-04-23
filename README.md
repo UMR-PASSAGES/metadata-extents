@@ -2,13 +2,15 @@
 
 ##Synopsis
 
-This is a python script that creates an ASC raster layer counting superpositions of rectangular extents defined by four coordinates.
+This is a python script that creates an ASC raster layer counting superpositions of rectangular extents defined by four coordinates. The input is a CSV with 4 columns for east, west, north and south coordinates of each extent.
 
 <img src="images/superposition.png" alt="Superposition of rectangles" width="400"/>
 
 The resulting ASC layer can be viewed in GIS software to produce this kind of maps :
 
 <img src="images/map_example.png" alt="Map example" width="400"/>
+
+You can then use asc_calculator to calculate differences between two asc files, to create an evolution map between 2 dates for example.
 
 ##Motivation
 
